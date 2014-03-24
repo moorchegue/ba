@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          Behigh avatars
+// @name          Behigh avatars insertion.
 // @author        murchik <mixturchik@gmail.com>
 // @description   Avatar support for old crappy IPB forum engine.
 // @homepage      http://behigh.org/
