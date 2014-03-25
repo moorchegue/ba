@@ -4,7 +4,7 @@
 // @description   Avatar support for old crappy IPB forum engine.
 // @homepage      http://behigh.org/
 // @match         *://*.behigh.org/inv/*
-// @version       1.0
+// @version       1.0.2
 // ==/UserScript==
 
 function getJosephID(joseph) {
