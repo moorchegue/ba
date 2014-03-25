@@ -15,6 +15,12 @@ function getAvatar(joseph_id) {
 	return location.protocol + '//' + location.host + '/inv/uploads/profile/photo-thumb-' + joseph_id + '.jpg';
 }
 
+function fixFloatation(joseph) {
+	br = document.createElement("div");
+	br.setAttribute("style", "clear:both");
+	joseph.parentNode.parentNode.appendChild(br);
+}
+
 function insertAvatar(joseph) {
 	joseph_id = getJosephID(joseph);
 
@@ -25,6 +31,9 @@ function insertAvatar(joseph) {
 	avatar_node = document.createElement("li");
 	avatar_node.appendChild(avatar);
 	joseph.insertBefore(avatar_node, joseph.firstChild);
+
+	// HACK awful markup fix
+	fixFloatation(joseph);
 }
 
 function install() {
