@@ -8,7 +8,7 @@
 // ==/UserScript==
 
 function getJosephID(joseph) {
-	return joseph.lastChild.previousSibling.textContent.slice(1);
+	return joseph.lastChild.previousSibling.textContent.slice(1).replace(/\s/g,'');
 }
 
 function getAvatar(joseph_id) {
